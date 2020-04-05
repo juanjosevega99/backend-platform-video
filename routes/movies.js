@@ -82,7 +82,7 @@ function moviesApi(app) {
     }
   });
 
-  router.path('/:movieId', async function (req, res, next) {
+  router.patch('/:movieId', async function (req, res, next) {
     const { movieId } = req.params;
     const { body: movie } = req;
 
